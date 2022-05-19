@@ -1,0 +1,51 @@
+curl and libcurl 7.83.2
+
+ Public curl releases:         209
+ Command line options:         247
+ curl_easy_setopt() options:   295
+ Public functions in libcurl:  88
+ Contributors:                 2632
+
+This release includes the following changes:
+
+ o
+
+This release includes the following bugfixes:
+
+ o aws-sigv4: fix potentional NULL pointer arithmetic [48]
+ o ci: update github actions [36]
+ o curl.1: mention exit code zero too [44]
+ o FAQ: Clarify Windows double quote usage [42]
+ o gssapi: improve handling of errors from gss_display_status [45]
+ o gssapi: initialize gss_buffer_desc strings
+ o http2: always debug print stream id in decimal with %u [46]
+ o quiche: support ca-fallback [49]
+ o tests 266, 116 and 1540: add a small write delay
+ o tests/server/sws.c: change the HTTP writedelay unit to milliseconds [47]
+ o url: free old conn better on reuse [41]
+ o url: remove redundant #ifdefs in allocate_conn()
+ o x509asn1: mark msnprintf return as unchecked [50]
+
+This release includes the following known bugs:
+
+ o see docs/KNOWN_BUGS (https://curl.se/docs/knownbugs.html)
+
+This release would not have looked like this without help, code, reports and
+advice from friends like these:
+
+  Andrea Pappacoda, Daniel Gustafsson, Daniel Stenberg, Fabian Keil,
+  Frazer Smith, Kamil Dudka, KotlinIsland on github, Ray Satiro
+  (8 contributors)
+
+References to bug reports and discussions on issues:
+
+ [36] = https://curl.se/bug/?i=8843
+ [41] = https://curl.se/bug/?i=8841
+ [42] = https://curl.se/bug/?i=8823
+ [44] = https://curl.se/bug/?i=8833
+ [45] = https://curl.se/bug/?i=8832
+ [46] = https://curl.se/bug/?i=8808
+ [47] = https://curl.se/bug/?i=8827
+ [48] = https://curl.se/bug/?i=8814
+ [49] = https://curl.se/bug/?i=8696
+ [50] = https://curl.se/bug/?i=8831
